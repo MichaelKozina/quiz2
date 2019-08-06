@@ -1,0 +1,48 @@
+<body>
+
+  <div class="blog">
+    <h1>Quiz</h1>
+      <p>I have chosen to make a ruby app of my first blog post.</p>
+      
+    <h2>The Keys to Learning Something New</h2>    
+      <p>
+        Getting out of our comfort zones and learning something new is a challenge we all face. The below points will help you through the experience of learning something new.
+      </p>
+      
+    <h3>The time to start learning is now!</h3>    
+      <p>
+        Don’t waste what could be years of learning . The longer you wait, the more time will pass. Start learning right away. The more you learn, the hungrier you will become and want to learn more. Once you have momentum, it’ll be easy to keep going.
+      </p>  
+      
+    <h3>Read it today, understand it tomorrow.</h3>    
+      <p>
+        New information is overwhelming. You don’t have to understand everything you read overnight. Learn as much as you can and it will make more sense every time you see it. If you review something enough times, it will begin to look familiar and be easier to understand.
+      </p>
+      
+    <h3>Focus on how much you’re learning, not how much you don’t know.</h3>    
+      <p>
+        You will feel very overwhelmed learning something new. You will feel like you are no where close to knowing it all. The truth is, it’s impossible to learn everything. If you focus on how much more you know today than you did yesterday, you will be happier and more motivated to learn more.
+      </p>
+      
+      <p>
+        If you follow these simple tips you will have an easier time learning and be less stressed!
+      </p>       
+  </end>
+
+  <div class="col-10 links">
+    <%= link_to 'Click here to comment on the blog!', new_comment_path %>      
+  </div>
+  <br />
+
+  <%= @comment.each do |comment| %>
+    <div>
+      <h3><%= comment.description %></h3>
+      <i><%= comment.author %></i><br />
+    </div>
+  <% end %>
+  
+  <br />
+  <br />
+  <br />
+
+</body>
